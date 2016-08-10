@@ -1,0 +1,22 @@
+{
+  "name": "gruntworkflows",
+  "version": "1.0.0",
+  "description": "Project for Grunt Workflows Course",
+  "author": "Ram Maradolla",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-bower-concat": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.0",
+    "grunt-wiredep":"^3.0.1",
+    "normalize.css": "^4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" ng-app="ngViewExample">
+<head>
+  <meta charset="UTF-8">
+  <title>InitiateFirst/</title>
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,500,200,300,600,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="nav-is-fixed"   ng-controller="MainCtrl as main">
+<header class="cd-main-header">
+  <a class="cd-logo" href="#0">
+    <img src="assets/icons/cd-logo.svg" alt="Logo">
+  </a>
+  <ul class="cd-header-buttons">
+    <li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>
+    <li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
+  </ul>
+  <!-- cd-header-buttons -->
+</header>
+
+<main class="cd-main-content">
+  <!-- your content here -->
+  <img src="assets/images/underconstruction.jpg"/>
+  <div ng-view class="view-animate"></div>
+
+</main>
+
+<div class="cd-overlay"></div>
+<nav class="cd-nav">
+  <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+    <li class="has-children">
+      <a href="#/consulting">Consulting</a>
+      <ul class="cd-secondary-nav is-hidden">
+        <li class="go-back"><a href="#0">Menu</a></li>
+        <li class="see-all"><a href="">All Consulting</a></li>
+        <li class="no-children">
+          <a href="#/consulting/overview">Overview</a>
+        </li>
+        <li class="no-children">
+          <a href="#/consulting/marketing"> Marketing Automation</a>
+        </li>
+        <li class="no-children">
+          <a href=""> Digital Experience</a>
+        </li>
+        <li class="no-children">
+          <a href="">Cloud System Integration</a>
+        </li>
+        <li class="no-children">
+          <a href=""> IMPACT</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="has-children">
+      <a href="#/data">Data</a>
+      <ul class="cd-secondary-nav is-hidden">
+        <li class="go-back"><a href="#0">Menu</a></li>
+        <li class="see-all"><a href="">All Data</a></li>
+        <li class="no-children">
+          <a href="#/data/overview">Overview</a>
+        </li>
+        <li class="no-children">
+          <a href="">Single Customer View</a>
+        </li>
+        <li class="no-children">
+          <a href="">Insight Services</a>
+        </li>
+        <li class="no-children">
+          <a href="">Data Quality</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="has-children">
+      <a href="#/technology">Technology</a>
+      <ul class="cd-secondary-nav is-hidden">
+        <li class="go-back"><a href="#0">Menu</a></li>
+        <li class="see-all"><a href="">All Technology</a></li>
+        <li class="no-children">
+          <a href="#/technology/partners">Partners</a>
+        </li>
+        <li class="no-children">
+          <a href="">ENABLE</a>
+        </li>
+      </ul>
+    </li>
+    <li class="no-children"><a href="">Clients</a></li>
+    <li class="no-children"><a href="">Thoughts</a></li>
+    <li class="no-children"><a href="">Careers & Contact</a></li>
+  </ul>
+  <!-- primary-nav -->
+</nav>
+<!-- cd-nav -->
+<div id="cd-search" class="cd-search">
+  <form>
+    <input type="search" placeholder="Search...">
+  </form>
+</div>
+<!-- Resource jQuery -->
+
+<script src="js/_bower.js"></script>
+<script src="js/script.js"></script>
+<!--<script type="text/javascript">-->
+  <!--angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));-->
+<!--</script>-->
+</body>
+</html>

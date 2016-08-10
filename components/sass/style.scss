@@ -1,0 +1,14 @@
+// style.scss, This is the main scss file to combine all scss files in order.
+// ==============
+  
+//Core partials
+@import "generic";
+@import "settings";
+@import "tools";
+@import "base";
+@import "objects";
+@import "cmpnnts";
+@import "trumps";
+
+
+// JS partials

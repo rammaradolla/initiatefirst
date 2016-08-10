@@ -1,0 +1,140 @@
+/* OBJECTS
+ * Wrappers.............Wrapping and constraining elements.*/
+
+
+/* --------------------------------
+
+Main objects
+
+-------------------------------- */
+
+a {
+  color: $color-2;
+  text-decoration: none;
+}
+
+img {
+  /* make images responsive */
+  max-width: 100%;
+}
+
+input {
+  font-family: $primary-font;
+  font-size: 1.6rem;
+}
+
+input[type="search"]::-ms-clear {
+  /* removes close icon - IE */
+  display: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.cd-logo {
+  position: absolute;
+  top: 12px;
+  left: 5%;
+
+  img {
+    display: block;
+  }
+
+  @include MQ(maxL) {
+    .nav-on-left & {
+      left: auto;
+      right: 5%;
+    }
+  }
+
+  @include MQ(L) {
+    top: 26px;
+    left: 4em;
+  }
+}
+
+//website specific
+
+.cd-main-content {
+  font-family: "Raleway", sans-serif;
+}
+
+.bg-img-wrapper{
+   height:400px;
+  img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.main-article {
+  padding: 20px;
+  @include MQ(M) {
+    padding: 30px;
+  }
+  @include MQ(L) {
+    padding: 40px;
+  }
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+}
+p{
+  font-size: 1.5rem;
+  margin:20px 0;
+  line-height: 1.9rem;
+}
+
+.standard-text-widget .caption {
+  position: relative; }
+.standard-text-widget * + ul,
+.standard-text-widget * + ol,
+.standard-text-widget * + dl,
+.standard-text-widget * + blockquote,
+.standard-text-widget * + table {
+  margin: 17px 0 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+#rightside{
+  background:$color-3;
+  width: 100%;
+  padding: 20px;
+  @include MQ(M) {
+    padding: 30px;
+  }
+  @include MQ(L) {
+    padding: 40px;
+  }
+  position:relative;
+}
+
+.page-list li {
+  border-bottom: 1px solid #cdcdcd;
+  line-height:40px;
+}
+
+.bg-blue-base {
+  background: #10253F;
+  color: white;
+  padding: 20px;
+  @include MQ(M) {
+    padding: 30px;
+  }
+  @include MQ(L) {
+    padding: 40px;
+  }
+}
