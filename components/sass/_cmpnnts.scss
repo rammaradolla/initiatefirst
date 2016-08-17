@@ -50,6 +50,7 @@ body {
      background: $color-4;
      min-height: 100vh;
      z-index: $content;
+     overflow: auto;
      @include MQ(L) {
        margin-top: 80px;
      }

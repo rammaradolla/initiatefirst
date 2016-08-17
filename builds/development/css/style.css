@@ -149,18 +149,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 600; }
 
-#rightside {
-  background: #e2e3df;
-  width: 100%;
-  padding: 20px;
-  position: relative; }
-  @media only screen and (min-width: 768px) {
-    #rightside {
-      padding: 30px; } }
-  @media only screen and (min-width: 1170px) {
-    #rightside {
-      padding: 40px; } }
-
 .page-list li {
   border-bottom: 1px solid #cdcdcd;
   line-height: 40px; }
@@ -227,6 +215,7 @@ body {
   background: #ffffff;
   min-height: 100vh;
   z-index: 2;
+  overflow: auto;
   margin-top: 50px; }
   @media only screen and (min-width: 1170px) {
     .cd-main-content {
@@ -1091,3 +1080,21 @@ body {
 
 /* TRUMPS
  Text.................Text helpers. */
+.view-animate.ng-enter, .view-animate.ng-leave {
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.view-animate.ng-enter {
+  left: 100%; }
+
+.view-animate.ng-enter.ng-enter-active {
+  left: 0; }
+
+.view-animate.ng-leave.ng-leave-active {
+  left: -100%; }

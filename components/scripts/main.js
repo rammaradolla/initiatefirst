@@ -142,7 +142,7 @@ jQuery(document).ready(function($){
 
 (function(angular) {
     'use strict';
-    angular.module('ngViewExample', ['ngRoute'])
+    angular.module('ngViewExample', ['ngRoute','ngAnimate'])
         .config(['$routeProvider', '$locationProvider',
             function($routeProvider, $locationProvider) {
                 $routeProvider
@@ -158,17 +158,20 @@ jQuery(document).ready(function($){
                     .when('/consulting/marketing', {
                         templateUrl: 'templates/consultancy/marketing.html'
                     })
-                    .when('/data', {
+                    .when('/team', {
                         templateUrl: '/templates/data/overview.html'
                     })
-                    .when('/data/overview', {
-                        templateUrl: '/templates/data/overview.html'
+                    .when('/team/partners', {
+                        templateUrl: '/templates/team/partners.html'
                     })
-                    .when('/technology', {
-                        templateUrl: '/templates/data/overview.html'
+                    .when('/aboutUS', {
+                        templateUrl: '/templates/aboutUS.html'
                     })
-                    .when('/technology/partners', {
-                        templateUrl: '/templates/technology/partners.html'
+                    .when('/contactUS', {
+                        templateUrl: '/templates/contactUS.html'
+                    })
+                    .when('/joinOurTeam', {
+                        templateUrl: '/templates/joinOurTeam.html'
                     })
 
                 //$locationProvider.html5Mode(true);

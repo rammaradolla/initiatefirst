@@ -109,18 +109,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-#rightside{
-  background:$color-3;
-  width: 100%;
-  padding: 20px;
-  @include MQ(M) {
-    padding: 30px;
-  }
-  @include MQ(L) {
-    padding: 40px;
-  }
-  position:relative;
-}
 
 .page-list li {
   border-bottom: 1px solid #cdcdcd;
