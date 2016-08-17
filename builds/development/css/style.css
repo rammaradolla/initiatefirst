@@ -1071,6 +1071,12 @@ body {
   .no-js .nav-is-fixed .cd-primary-nav {
     position: fixed; } }
 
+.services-list {
+  padding-left: 20px;
+  line-height: 30px;
+  list-style-type: disc;
+  padding-bottom: 40px; }
+
 .bg-blue-base input {
   width: 100%;
   margin: 10px 0; }

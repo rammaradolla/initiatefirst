@@ -168,7 +168,13 @@ jQuery(document).ready(function($){
                         templateUrl: '/templates/team/partners.html'
                     })
                     .when('/aboutUS', {
-                        templateUrl: '/templates/aboutUS.html'
+                        templateUrl: '/templates/aboutUS/aboutUS.html'
+                    })
+                    .when('/aboutUS/aboutUS', {
+                        templateUrl: '/templates/aboutUS/aboutUS.html'
+                    })
+                    .when('/aboutUS/solutionsAndServices', {
+                        templateUrl: '/templates/aboutUS/solutionsAndServices.html'
                     })
                     .when('/contactUS', {
                         templateUrl: '/templates/contactUS.html'
